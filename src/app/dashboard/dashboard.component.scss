@@ -1,0 +1,207 @@
+.container{
+  background-color: white;
+}
+.panel-body h5 {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.panel-body {
+  padding: 1.5rem;
+}
+
+.cards{
+  margin-bottom: 0;
+}
+.container-fluid {
+  padding: 2.5rem;
+}
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.info-item .title {
+  //font-weight: bold;
+}
+
+.info-item .number {
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile-img{
+  width: 40px;
+}
+.profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90px;
+  font-size: 16px;
+}
+.icon-label {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.icon-label i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.icon-label span {
+  font-size: 16px;
+}
+.request-heading{
+  margin-bottom: 1rem;
+}
+.card-custom {
+  min-height: 120px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+@media (min-width: 992px) {
+  .card-custom {
+    min-height: 20rem;
+  }
+}
+.icon-top-left {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: #fff;
+}
+
+.text-bottom-left {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: #fff;
+  max-width: 90px;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.icon-bottom-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  color: #fff;
+}
+
+.panel-danger {
+  background-color: #e60168;
+}
+
+.panel-primary {
+  background-color: purple;
+}
+
+.panel-info {
+  background-color: dodgerblue;
+}
+
+.panel-warning {
+  background-color: #ffbc0e;
+}
+.panel-title{
+  cursor: pointer;
+}
+.sub-title{
+  font-size: 1.4rem;
+}
+
+.panel-heading {
+  background-color: white;
+  border: white;
+}
+
+.panel-collapse {
+  background-color: white;
+}
+
+.table thead th {
+  font-weight: normal;
+}
+.custom-font{
+  font-size: 1.5rem;
+}
+.p{
+  margin: 0;
+}
+.bullet-size {
+  font-size: 2rem; /* Adjust the size as needed */
+  line-height: 1;  /* This keeps the bullet vertically centered */
+}
+
+.impact-box {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  margin: 1rem;
+  width: 9rem;
+}
+
+.impact-box-2  {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  background-color: #f0fff5;
+  border-radius: 5px;
+  margin: 1rem;
+  width: 9rem;
+}
+
+.impact-number {
+  font-size: 24px;
+  margin: 0;
+}
+
+.impact-label {
+  font-size: 14px;
+  color: cornflowerblue;
+  margin: 0;
+}
+.impact-label-2 {
+  font-size: 14px;
+  color: lightseagreen;
+  margin: 0;
+}
+
+.fa-star {
+  color: #ffc107;
+}
+
+.text-center p {
+  font-size: 14px;
+  color: #666;
+}
+.center-div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.table-responsive {
+  border: none;
+}
