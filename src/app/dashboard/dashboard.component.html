@@ -1,12 +1,13 @@
 <div class="container-fluid">
   <div class="row">
     <!-- Sidebar -->
-    <div class="col-sm-3 col-md-2">
+    <div class="col-sm-3 col-md-3">
       <div class="panel panel-default">
         <div class="panel-body">
           <div class="profile-header">
-            <img class="profile-img" src="assets/profile-icon.png" alt="Profile Image">
-            <p class="username">Hello <br> <b>Administrator</b></p>
+<!--            <img class="profile-img" src="assets/profile-icon.png" alt="Profile Image">-->
+            <p class="profile-img" style="margin-right: 1rem">AG</p>
+            <p class="username">Hello <b>Administrator</b></p>
           </div>
 
           <div class="info-item">
@@ -28,11 +29,11 @@
 
           <!-- Icon buttons -->
           <div class="icon-label">
-            <i class="fa fa-briefcase"></i>
+            <img class="icon-size" src="assets/icons-32.png" alt="Briefcase Image">
             <span>Create a job</span>
           </div>
           <div class="icon-label">
-            <i class="fa fa-user"></i>
+            <img class="icon-size" src="assets/icons-33.png" alt="Person Image">
             <span>Upload candidates</span>
           </div>
         </div>
@@ -40,41 +41,95 @@
     </div>
 
     <!-- Main Content -->
-    <div class="col-sm-9 col-md-10">
+    <div class="col-sm-9 col-md-9">
       <div class="panel cards">
         <div class="panel-body">
           <div class="request-heading">
             <b>Request Assigned to you</b>
           </div>
 
-          <div class="slider">
+          <div class="slider row">
             <!-- Request cards -->
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4">
               <div class="panel panel-danger card-custom">
                 <div class="panel-body">
-                  <i class="fa fa-user icon-top-left"></i>
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #d71f5d">
+                    <img class="icon-size-cards" src="assets/offer_approvals.png">
+                  </p>
                   <b class="text-bottom-left">
-                    2 <br> Offer requests</b>
+                    <b class="font-large">2</b> <br> Offer requests</b>
                   <i class="fa fa-arrow-right icon-bottom-right"></i>
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4">
               <div class="panel panel-primary card-custom">
                 <div class="panel-body">
-                  <i class="fa fa-users icon-top-left"></i>
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #9144b4">
+                    <img class="icon-size-cards" src="assets/offer_approvals.png">
+                  </p>
                   <b class="text-bottom-left">
-                    2 <br> Bulk offer requests</b>
+                    <b class="font-large">2</b> <br> Bulk offer requests</b>
                   <i class="fa fa-arrow-right icon-bottom-right"></i>
                 </div>
               </div>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-sm-4">
               <div class="panel panel-info card-custom">
                 <div class="panel-body">
-                  <i class="fa fa-comment icon-top-left"></i>
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #21bcf2">
+                    <img class="icon-size-cards" src="assets/offer_approvals.png">
+                  </p>
                   <b class="text-bottom-left">
-                    3 <br> Interview feedback pending</b>
+                    <b class="font-large">3</b> <br> Interview feedback pending</b>
+                  <i class="fa fa-arrow-right icon-bottom-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="panel panel-warning card-custom">
+                <div class="panel-body">
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
+                  </p>
+                  <b class="text-bottom-left">
+                    <b class="font-large">6</b> <br> Review feedback pending</b>
+                  <i class="fa fa-arrow-right icon-bottom-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="panel panel-warning card-custom">
+                <div class="panel-body">
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
+                  </p>
+                  <b class="text-bottom-left">
+                    <b class="font-large">6</b> <br> Review feedback pending</b>
+                  <i class="fa fa-arrow-right icon-bottom-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="panel panel-warning card-custom">
+                <div class="panel-body">
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
+                  </p>
+                  <b class="text-bottom-left">
+                    <b class="font-large">6</b> <br> Review feedback pending</b>
+                  <i class="fa fa-arrow-right icon-bottom-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2 col-sm-4">
+              <div class="panel panel-warning card-custom">
+                <div class="panel-body">
+                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
+                  </p>
+                  <b class="text-bottom-left">
+                    <b class="font-large">6</b> <br> Review feedback pending</b>
                   <i class="fa fa-arrow-right icon-bottom-right"></i>
                 </div>
               </div>
@@ -82,39 +137,11 @@
             <div class="col-md-2">
               <div class="panel panel-warning card-custom">
                 <div class="panel-body">
-                  <i class="fa fa-exclamation icon-top-left"></i>
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #f2a528">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
+                  </p>
                   <b class="text-bottom-left">
-                    6 <br> Review feedback pending</b>
-                  <i class="fa fa-arrow-right icon-bottom-right"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="panel panel-warning card-custom">
-                <div class="panel-body">
-                  <i class="fa fa-exclamation icon-top-left"></i>
-                  <b class="text-bottom-left">
-                    6 <br> Review feedback pending</b>
-                  <i class="fa fa-arrow-right icon-bottom-right"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="panel panel-warning card-custom">
-                <div class="panel-body">
-                  <i class="fa fa-exclamation icon-top-left"></i>
-                  <b class="text-bottom-left">
-                    6 <br> Review feedback pending</b>
-                  <i class="fa fa-arrow-right icon-bottom-right"></i>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-2">
-              <div class="panel panel-warning card-custom">
-                <div class="panel-body">
-                  <i class="fa fa-exclamation icon-top-left"></i>
-                  <b class="text-bottom-left">
-                    6 <br> Review feedback pending</b>
+                    <b class="font-large">6</b> <br> Review feedback pending</b>
                   <i class="fa fa-arrow-right icon-bottom-right"></i>
                 </div>
               </div>
@@ -125,137 +152,221 @@
 
       <div class="panel panel-default">
         <div class="panel-body">
-          <h4>Keep track of your job's activity <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="This section helps you monitor the activity related to your job postings."></i></h4>
+          <h4>Keep track of your job's activity
+            <i
+              class="fa fa-question-circle custom-tooltip"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="This section helps you monitor the activity related to your job postings.">
+            </i>
+          </h4>
           <b>Check Offer Updates</b>
 
           <!-- First Accordion -->
           <div class="panel-group" id="offerAccordion">
             <div class="panel">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <p data-toggle="collapse" href="#collapseOne" aria-expanded="false">
-                    <b>123 Offers extended out to candidates</b> <br>
-                    <span class="sub-title">View & Prepare Offers</span>
-                    <i class="fa fa-chevron-down pull-right"></i>
+              <div class="panel-heading hover-bg">
+                <h4 class="panel-title align-item">
+                  <p class="icon-cards" style="background-color: #f2a528 ; border-radius: 10%">
+                    <img class="icon-size-cards" src="assets/create_offer.png">
                   </p>
+                  <p data-toggle="collapse" href="#collapseOne" aria-expanded="false" class="accordion-toggle width-cover">
+                    <span class="bold">123 Offers extended out to candidates</span>
+                    <span class="sub-title">View & Prepare Offers</span>
+
+                  </p>
+                  <i class="fa fa-chevron-down pull-right"></i>
                 </h4>
               </div>
+
               <div id="collapseOne" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <div class="table-responsive">
-                   <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>UPDATED ON</th>
-                      <th>OFFER EXPIRY</th>
-                      <th>CANDIDATE</th>
-                      <th>JOB TITLE - CODE</th>
-                      <th>STATUS</th>
-                      <th>ACTION</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>28 Mar 2020</td>
-                      <td>1 May 2020</td>
-                      <td><a href="#">ASIF qa - RH5695064</a></td>
-                      <td>Project Manager Systems - 1...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>31 Mar 2020</td>
-                      <td><a href="#">Rekha qa - RH5563765</a></td>
-                      <td>Delivery Project Lead - 175734</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">ABHILASH qa - RH5641273</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    </tbody>
-                  </table>
-
+                  <div class="table-responsive hidden-xs">
+                    <table class="table table-striped">
+                      <thead>
+                      <tr>
+                        <th>UPDATED ON</th>
+                        <th>OFFER EXPIRY</th>
+                        <th>CANDIDATE</th>
+                        <th>JOB TITLE - CODE</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>28 Mar 2020</td>
+                        <td>1 May 2020</td>
+                        <td><a href="#">ASIF qa - RH5695064</a></td>
+                        <td>Project Manager Systems - 1...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>31 Mar 2020</td>
+                        <td><a href="#">Rekha qa - RH5563765</a></td>
+                        <td>Delivery Project Lead - 175734</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">ABHILASH qa - RH5641273</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Modal for Mobile -->
+          <div class="modal fade" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Offer Details</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                      <tr>
+                        <th>UPDATED ON</th>
+                        <th>OFFER EXPIRY</th>
+                        <th>CANDIDATE</th>
+                        <th>JOB TITLE - CODE</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>28 Mar 2020</td>
+                        <td>1 May 2020</td>
+                        <td><a href="#">ASIF qa - RH5695064</a></td>
+                        <td>Project Manager Systems - 1...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>31 Mar 2020</td>
+                        <td><a href="#">Rekha qa - RH5563765</a></td>
+                        <td>Delivery Project Lead - 175734</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">ABHILASH qa - RH5641273</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
           <!-- Second Accordion -->
           <div class="panel-group" id="offerAccordion1">
             <div class="panel">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <p data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
-                    <b>37 Offer in Approval</b> <br>
-                    <span class="sub-title">26 Pending • 0 Approved • 11 Rejected</span>
-                    <i class="fa fa-chevron-down pull-right"></i>
+              <div class="panel-heading hover-bg">
+                <h4 class="panel-title align-item">
+                  <p class="icon-cards" style="background-color: #ee276a ; border-radius: 10%">
+                    <img class="icon-size-cards" src="assets/offer_approvals.png">
                   </p>
+                  <p data-toggle="collapse" href="#collapseTwo" aria-expanded="false" class="accordion-toggle width-cover">
+                    <span class="bold">37 Offer in Approval</span>
+                    <span class="sub-title">26 Pending • 0 Approved • 11 Rejected</span>
+                  </p>
+                  <i class="fa fa-chevron-down pull-right"></i>
                 </h4>
               </div>
               <div id="collapseTwo" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>UPDATED ON</th>
-                      <th>OFFER EXPIRY</th>
-                      <th>CANDIDATE</th>
-                      <th>JOB TITLE - CODE</th>
-                      <th>STATUS</th>
-                      <th>ACTION</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>28 Mar 2020</td>
-                      <td>1 May 2020</td>
-                      <td><a href="#">ASIF qa - RH5695064</a></td>
-                      <td>Project Manager Systems - 1...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>31 Mar 2020</td>
-                      <td><a href="#">Rekha qa - RH5563765</a></td>
-                      <td>Delivery Project Lead - 175734</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">ABHILASH qa - RH5641273</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive hidden-xs">
+                    <table class="table table-striped">
+                      <thead>
+                      <tr>
+                        <th>UPDATED ON</th>
+                        <th>OFFER EXPIRY</th>
+                        <th>CANDIDATE</th>
+                        <th>JOB TITLE - CODE</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>28 Mar 2020</td>
+                        <td>1 May 2020</td>
+                        <td><a href="#">ASIF qa - RH5695064</a></td>
+                        <td>Project Manager Systems - 1...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>31 Mar 2020</td>
+                        <td><a href="#">Rekha qa - RH5563765</a></td>
+                        <td>Delivery Project Lead - 175734</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">ABHILASH qa - RH5641273</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -264,63 +375,68 @@
           <!-- Third Accordion -->
           <div class="panel-group" id="offerAccordion2">
             <div class="panel">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <p data-toggle="collapse" href="#collapseThree" aria-expanded="false">
-                    <b>1 Bulk Offer in Approval</b> <br>
-                    <span class="sub-title">0 Pending • 1 Completed</span>
-                    <i class="fa fa-chevron-down pull-right"></i>
+              <div class="panel-heading hover-bg">
+                <h4 class="panel-title align-item">
+                  <p class="icon-cards" style="background-color: #62c030 ; border-radius: 10%">
+                    <img class="icon-size-cards" src="assets/Offer_accepted.png">
                   </p>
+                  <p data-toggle="collapse" href="#collapseThree" aria-expanded="false" class="accordion-toggle width-cover">
+                    <span class="bold">1 Bulk Offer in Approval</span>
+                    <span class="sub-title">0 Pending • 1 Completed</span>
+                  </p>
+                    <i class="fa fa-chevron-down pull-right"></i>
                 </h4>
               </div>
               <div id="collapseThree" class="panel-collapse collapse">
                 <div class="panel-body">
-                  <table class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>UPDATED ON</th>
-                      <th>OFFER EXPIRY</th>
-                      <th>CANDIDATE</th>
-                      <th>JOB TITLE - CODE</th>
-                      <th>STATUS</th>
-                      <th>ACTION</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>28 Mar 2020</td>
-                      <td>1 May 2020</td>
-                      <td><a href="#">ASIF qa - RH5695064</a></td>
-                      <td>Project Manager Systems - 1...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>31 Mar 2020</td>
-                      <td><a href="#">Rekha qa - RH5563765</a></td>
-                      <td>Delivery Project Lead - 175734</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-success">Accepted</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    <tr>
-                      <td>27 Mar 2020</td>
-                      <td>2 Apr 2020</td>
-                      <td><a href="#">ABHILASH qa - RH5641273</a></td>
-                      <td>Senior Software Engg - System...</td>
-                      <td><span class="label label-warning">Pending</span></td>
-                      <td><button class="btn btn-primary btn-sm">View Offer</button></td>
-                    </tr>
-                    </tbody>
-                  </table>
+                  <div class="table-responsive hidden-xs">
+                    <table class="table table-striped">
+                      <thead>
+                      <tr>
+                        <th>UPDATED ON</th>
+                        <th>OFFER EXPIRY</th>
+                        <th>CANDIDATE</th>
+                        <th>JOB TITLE - CODE</th>
+                        <th>STATUS</th>
+                        <th>ACTION</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>28 Mar 2020</td>
+                        <td>1 May 2020</td>
+                        <td><a href="#">ASIF qa - RH5695064</a></td>
+                        <td>Project Manager Systems - 1...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>31 Mar 2020</td>
+                        <td><a href="#">Rekha qa - RH5563765</a></td>
+                        <td>Delivery Project Lead - 175734</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">GEETHANJALI qa - RH5516423</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-success">Accepted</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      <tr>
+                        <td>27 Mar 2020</td>
+                        <td>2 Apr 2020</td>
+                        <td><a href="#">ABHILASH qa - RH5641273</a></td>
+                        <td>Senior Software Engg - System...</td>
+                        <td><span class="label label-warning">Pending</span></td>
+                        <td><button class="btn btn-primary btn-sm">View Offer</button></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -332,10 +448,10 @@
       <div class="row">
         <!-- Left Panel: Joiner's Source Mix -->
 
-        <div class="col-md-6">
+        <div class="col-md-7">
           <div class="panel panel-default">
             <!-- Panel Heading -->
-            <div class="panel-heading d-flex justify-content-between align-items-center">
+            <div class="panel-heading d-flex justify-content-between align-items-center p-2">
               <div class="row">
                 <div class="col-md-8">
                   <b class="custom-font">Your Joiner's source mix</b>
@@ -376,14 +492,14 @@
         </div>
 
         <!-- Right Panel: Your Impact -->
-        <div class="col-md-6">
+        <div class="col-md-5">
           <div class="panel panel-default">
-            <div class="panel-heading d-flex justify-content-between align-items-center">
+            <div class="panel-heading d-flex justify-content-between align-items-center p-2">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7">
                   <b class="custom-font">Your Impact</b>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-5" style="display: contents">
                   <p>JAN 2020 - MAR 2020 <i class="fa fa-caret-down"></i></p>
                 </div>
               </div>

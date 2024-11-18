@@ -1,3 +1,29 @@
+
+.open-sans-font {
+              font-family: "Open Sans", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 300;
+              font-style: normal;
+              font-variation-settings:
+                "wdth" 100;
+            }
+*{
+  font-family: "Open Sans", sans-serif;
+}
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  font-family: FontAwesome, sans-serif !important;
+}
+.p-2{
+  padding: 2rem;
+}
+.bold{
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 .container{
   background-color: white;
 }
@@ -19,7 +45,7 @@
 .info-item {
   display: flex;
   justify-content: space-between;
-  padding: 5px 0;
+  padding: 1rem;
 }
 
 .info-item .title {
@@ -31,32 +57,44 @@
   font-weight: bold;
 }
 .profile-img{
-  width: 40px;
+  width: 4.5rem;
+  height: 4.5rem;
+  color: white ;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #7791a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .profile-header {
   display: flex;
   align-items: center;
 }
 
-.profile-img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
+.username {
+  font-size: 16px;
+  flex: 1;
+  overflow: hidden;
 }
 
-.username {
+.username b {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 90px;
-  font-size: 16px;
+  max-width: 100%;
 }
+
 .icon-label {
   display: flex;
   align-items: center;
   margin-top: 5px;
   cursor: pointer;
+  padding: 1rem;
+}
+.icon-label:hover {
+  background-color: #DFF0FF;
 }
 
 .icon-label i {
@@ -71,31 +109,31 @@
   margin-bottom: 1rem;
 }
 .card-custom {
-  min-height: 120px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 1rem;
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 1rem;
+  min-height: 20rem;
 }
-@media (min-width: 992px) {
-  .card-custom {
-    min-height: 20rem;
-  }
-}
+//@media (min-width: 900px) {
+//  .card-custom {
+//    //min-height: 20rem;
+//  }
+//}
 .icon-top-left {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 2rem;
+  left: 2rem;
   color: #fff;
 }
 
 .text-bottom-left {
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 2rem;
+  left: 2rem;
   color: #fff;
   max-width: 90px;
   white-space: normal;
@@ -104,37 +142,41 @@
 
 .icon-bottom-right {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   font-size: 20px;
   color: #fff;
 }
 
 .panel-danger {
-  background-color: #e60168;
+  background-color: #f1286e;
 }
 
 .panel-primary {
-  background-color: purple;
+  background-color: #a254c4;
 }
 
 .panel-info {
-  background-color: dodgerblue;
+  background-color: #32c9fe;
 }
 
 .panel-warning {
-  background-color: #ffbc0e;
+  background-color: #f9ab2d;
 }
 .panel-title{
   cursor: pointer;
 }
 .sub-title{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  text-decoration-color: #576477;
 }
 
 .panel-heading {
   background-color: white;
   border: white;
+}
+.hover-bg:hover {
+  background-color: #f5f5f5;
 }
 
 .panel-collapse {
@@ -205,3 +247,59 @@
 .table-responsive {
   border: none;
 }
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-footer .btn-secondary {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.icon-size {
+  width: 2rem;
+  margin-right: 1rem;
+}
+.icon-cards {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.icon-size-cards {
+  width: 5rem;
+}
+.font-large {
+  font-size: 2rem;
+}
+.width-cover {
+  width: 100%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.align-item {
+  display: flex;
+  align-items: center
+}
+/* Customize tooltip icon color */
+.custom-tooltip {
+  color: black;
+  cursor: pointer;
+}
+
+/* Bootstrap tooltip customization */
+.tooltip {
+  background-color: white !important; /* White background */
+  color: black !important; /* Black text */
+  border: 1px solid black; /* Black border */
+  border-radius: 5px; /* Optional: rounded corners */
+  padding: 10px; /* Optional: increase padding */
+  font-size: 14px; /* Optional: adjust font size */
+}
+
+/* Optional: Arrow styling */
+.tooltip .arrow::before {
+  border-right-color: white !important;
+  border-left-color: white !important;
+}
+

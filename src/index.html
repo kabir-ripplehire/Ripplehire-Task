@@ -6,11 +6,87 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+  </style>
+
+  <!-- Bootstrap 3 and Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
-  <app-root></app-root>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<app-root></app-root>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Tooltip initialization (preferably moved to the Angular component) -->
+<script>
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.accordion-toggle').on('click', function (e) {
+      if ($(window).width() < 768) {
+        // Prevent accordion collapse on mobile
+        e.preventDefault();
+
+        // Show the modal instead of the accordion
+        $('#tableModal').modal('show');
+      }
+    });
+    $('#tableModal').on('hidden.bs.modal', function () {
+      // If the modal is hidden, remove 'in' class from #collapseOne
+      if ($('#tableModal').css('display') === 'none') {
+        $('#collapseOne').removeClass('in');
+        $('#collapseTwo').removeClass('in');
+        $('#collapseThree').removeClass('in');
+      }
+    });
+  });
+  $(document).ready(function(){
+    $('.slider').slick({
+      slidesToShow: 6,  // Display max 6 cards at a time
+      slidesToScroll: 1, // Scroll one card at a time
+      infinite: false,   // Option to disable infinite scroll
+      dots: true,        // Enable dots below for navigation
+      arrows: false,      // Display navigation arrows
+      responsive: [
+        {
+          breakpoint: 1204,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+  });
+</script>
+
 </body>
 </html>
