@@ -78,7 +78,7 @@
   overflow: hidden;
 }
 
-.username b {
+.username-b {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -163,7 +163,7 @@
 .panel-warning {
   background-color: #f9ab2d;
 }
-.panel-title{
+.cursor-pointer{
   cursor: pointer;
 }
 .sub-title{
@@ -177,6 +177,7 @@
 }
 .hover-bg:hover {
   background-color: #f5f5f5;
+  cursor: pointer;
 }
 
 .panel-collapse {
@@ -302,4 +303,9 @@
   border-right-color: white !important;
   border-left-color: white !important;
 }
-
+.date-picker-css {
+  width: 9rem;
+  border: none;
+  background-color: white;
+  color: black;
+}

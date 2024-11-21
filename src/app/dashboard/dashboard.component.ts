@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,11 +7,16 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() {
+  showDatepicker: boolean = false; // Controls visibility of the date picker
+  startDate: Date | null = null; // Holds the start date value
+  endDate: Date | null = null;   // Holds the end date value
+
+  constructor() { }
+
+  ngOnInit(): void { }
+
+  // Toggles the date picker visibility
+  toggleDatepicker(): void {
+    this.showDatepicker = !this.showDatepicker;
   }
-
-  ngOnInit() {
-
-  }
-
 }

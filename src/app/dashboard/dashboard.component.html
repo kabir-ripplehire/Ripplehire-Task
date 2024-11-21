@@ -7,7 +7,7 @@
           <div class="profile-header">
 <!--            <img class="profile-img" src="assets/profile-icon.png" alt="Profile Image">-->
             <p class="profile-img" style="margin-right: 1rem">AG</p>
-            <p class="username">Hello <b>Administrator</b></p>
+            <div class="username">Hello <p class="bold username-b">Administrator</p></div>
           </div>
 
           <div class="info-item">
@@ -44,8 +44,8 @@
     <div class="col-sm-9 col-md-9">
       <div class="panel cards">
         <div class="panel-body">
-          <div class="request-heading">
-            <b>Request Assigned to you</b>
+          <div class="request-heading bold">
+            Request Assigned to you
           </div>
 
           <div class="slider row">
@@ -65,7 +65,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-primary card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #9144b4">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #9144b4">
                     <img class="icon-size-cards" src="assets/offer_approvals.png">
                   </p>
                   <b class="text-bottom-left">
@@ -77,7 +77,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-info card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #21bcf2">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #21bcf2">
                     <img class="icon-size-cards" src="assets/offer_approvals.png">
                   </p>
                   <b class="text-bottom-left">
@@ -89,7 +89,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-warning card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #f2a528">
                     <img class="icon-size-cards" src="assets/create_offer.png">
                   </p>
                   <b class="text-bottom-left">
@@ -101,7 +101,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-warning card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #f2a528">
                     <img class="icon-size-cards" src="assets/create_offer.png">
                   </p>
                   <b class="text-bottom-left">
@@ -113,7 +113,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-warning card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #f2a528">
                     <img class="icon-size-cards" src="assets/create_offer.png">
                   </p>
                   <b class="text-bottom-left">
@@ -125,7 +125,7 @@
             <div class="col-md-2 col-sm-4">
               <div class="panel panel-warning card-custom">
                 <div class="panel-body">
-                  <p class="profile-img  icon-cards icon-top-left hidden-xs hidden-sm" style="background-color: #f2a528">
+                  <p class="profile-img  icon-cards icon-top-left" style="background-color: #f2a528">
                     <img class="icon-size-cards" src="assets/create_offer.png">
                   </p>
                   <b class="text-bottom-left">
@@ -160,20 +160,24 @@
               title="This section helps you monitor the activity related to your job postings.">
             </i>
           </h4>
-          <b>Check Offer Updates</b>
+          <div class="bold">Check Offer Updates</div>
 
           <!-- First Accordion -->
           <div class="panel-group" id="offerAccordion">
             <div class="panel">
-              <div class="panel-heading hover-bg">
+              <div
+                class="panel-heading hover-bg"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+              >
                 <h4 class="panel-title align-item">
                   <p class="icon-cards" style="background-color: #f2a528 ; border-radius: 10%">
-                    <img class="icon-size-cards" src="assets/create_offer.png">
+                    <img class="icon-size-cards" src="assets/create_offer.png" />
                   </p>
-                  <p data-toggle="collapse" href="#collapseOne" aria-expanded="false" class="accordion-toggle width-cover">
+                  <p class="accordion-toggle width-cover">
                     <span class="bold">123 Offers extended out to candidates</span>
                     <span class="sub-title">View & Prepare Offers</span>
-
                   </p>
                   <i class="fa fa-chevron-down pull-right"></i>
                 </h4>
@@ -233,6 +237,7 @@
               </div>
             </div>
           </div>
+
 
           <!-- Modal for Mobile -->
           <div class="modal fade" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -305,12 +310,17 @@
           <!-- Second Accordion -->
           <div class="panel-group" id="offerAccordion1">
             <div class="panel">
-              <div class="panel-heading hover-bg">
+              <div
+                class="panel-heading hover-bg"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+              >
                 <h4 class="panel-title align-item">
-                  <p class="icon-cards" style="background-color: #ee276a ; border-radius: 10%">
-                    <img class="icon-size-cards" src="assets/offer_approvals.png">
+                  <p class="icon-cards" style="background-color: #ee276a; border-radius: 10%">
+                    <img class="icon-size-cards" src="assets/offer_approvals.png" />
                   </p>
-                  <p data-toggle="collapse" href="#collapseTwo" aria-expanded="false" class="accordion-toggle width-cover">
+                  <p class="accordion-toggle width-cover">
                     <span class="bold">37 Offer in Approval</span>
                     <span class="sub-title">26 Pending • 0 Approved • 11 Rejected</span>
                   </p>
@@ -372,19 +382,25 @@
             </div>
           </div>
 
+
           <!-- Third Accordion -->
           <div class="panel-group" id="offerAccordion2">
             <div class="panel">
-              <div class="panel-heading hover-bg">
+              <div
+                class="panel-heading hover-bg"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+              >
                 <h4 class="panel-title align-item">
-                  <p class="icon-cards" style="background-color: #62c030 ; border-radius: 10%">
-                    <img class="icon-size-cards" src="assets/Offer_accepted.png">
+                  <p class="icon-cards" style="background-color: #62c030; border-radius: 10%">
+                    <img class="icon-size-cards" src="assets/Offer_accepted.png" />
                   </p>
-                  <p data-toggle="collapse" href="#collapseThree" aria-expanded="false" class="accordion-toggle width-cover">
+                  <p class="accordion-toggle width-cover">
                     <span class="bold">1 Bulk Offer in Approval</span>
                     <span class="sub-title">0 Pending • 1 Completed</span>
                   </p>
-                    <i class="fa fa-chevron-down pull-right"></i>
+                  <i class="fa fa-chevron-down pull-right"></i>
                 </h4>
               </div>
               <div id="collapseThree" class="panel-collapse collapse">
@@ -441,6 +457,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -453,12 +470,24 @@
             <!-- Panel Heading -->
             <div class="panel-heading d-flex justify-content-between align-items-center p-2">
               <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-9 col-xs-7">
                   <b class="custom-font">Your Joiner's source mix</b>
                 </div>
-                <div class="col-md-4">
-                  <p>JAN 2020 - MAR 2020 <i class="fa fa-caret-down"></i></p>
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <p>
+                  <input
+                    matInput
+                    [matDatepicker]="picker"
+                    placeholder="DD/MM/YY"
+                    disabled
+                    class="date-picker-css"
+                  />
+                  <i class="fa fa-caret-down cursor-pointer" (click)="picker.open()"></i>
+                  </p>
+                  <!-- Hidden Date Picker -->
+                  <mat-datepicker #picker disabled="false"></mat-datepicker>
                 </div>
+
               </div>
             </div>
 
@@ -467,13 +496,13 @@
               <div class="row">
                 <!-- Left Side: Graph Placeholder -->
                 <div class="col-md-8">
-                  <div class="graph-placeholder" style="width: 100%; height: 18rem; background-color: #e0e0e0;"></div>
+                  <p class="graph-placeholder" style="width: 100%; height: 18rem; background-color: #e0e0e0;"></p>
                 </div>
 
                 <!-- Right Side: Total Joiners Info -->
                 <div class="col-md-4">
-                  <p><b>Total Joiners:
-                    <span style="float: right;">90</span></b></p>
+                  <p><span class="bold">Total Joiners:
+                    <span style="float: right;">90</span></span></p>
                   <ul class="list-unstyled">
                     <li>
                       <span class="bullet-size text-danger">●</span> Agency
@@ -496,10 +525,10 @@
           <div class="panel panel-default">
             <div class="panel-heading d-flex justify-content-between align-items-center p-2">
               <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-7 col-sm-9 col-xs-7">
                   <b class="custom-font">Your Impact</b>
                 </div>
-                <div class="col-md-5" style="display: contents">
+                <div class="col-md-5 col-sm-3 col-xs-5" style="display: contents">
                   <p>JAN 2020 - MAR 2020 <i class="fa fa-caret-down"></i></p>
                 </div>
               </div>
